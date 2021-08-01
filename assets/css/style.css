@@ -1,37 +1,36 @@
 :root {
     --primary-color: #ffff;
-    --secondary-color: #024e76;
+    --secondary-color: rgb(40, 43, 43);
     --tertiary-color: rgb(40, 43, 43);
     --highlight-color: cadetblue;
-  }
+}
 
-  html {
+html {
     scroll-behavior: smooth;
-  }
+}
 
-  * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
-  body {
-    color: var(--tertiary-color);
+body {
     font-family: Helvetica, Arial, sans-serif;
-  }
+}
   
-  header {
+header {
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-  }
+}
 
-   header h1 {
+header h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     margin: 0;
@@ -40,50 +39,53 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: var(--highlight-color);
     padding: 0 5px 0 5px;
+    box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.95);
     }
 
-  header h1::first-letter {
+header h1::first-letter {
       font-weight: bolder;
-      color: rgb(57, 57, 58);
+      color: rgb(0, 0, 0);
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-  }
+}
 
-  header a {
+header a {
     text-decoration: none;
     color: var(--primary-color);
-  }
+}
  
-  header nav {
+header nav {
     margin: 7px 0;
-  }
+}
   
-  header nav ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-  }
+}
   
-  header nav ul li a {
+header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
   
-  header nav ul li a:hover {
+header nav ul li a:hover {
     background: var(--highlight-color);
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
-  }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.95);
+}
 
-  section {
+section {
     padding: 60px;
-  }
+    background-color: var(--highlight-color);
+}
 
-  .hero {
+.hero {
     background-image: url('../images/smoky.jpg');
     background-size: cover;
     display: flex;
@@ -91,23 +93,200 @@
     flex-wrap: wrap;
     background-attachment: fixed;
     background-position: 100%;
-  }
+    
+}
   
-  .hero-portrait {
+.hero-portrait {
     content: url(../images/Rob_1.jpg);
-    display: flex;
-    justify-content: flex-start;
     width: 35%;
-    height: 45%;
     margin-left: 5%;
     box-shadow: 0 13px 13px rgba(0, 0, 0, 0.75);
+}
 
-  }
-  
-  .hero-cta h2 {
-    font-style: italic;
-    font-size: 55px;
+.am_heading {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    font-size: x-large;
+    padding: 30px;
+    font-style: oblique;
+    border-bottom: 2px solid black;
+}
+
+.am_text {
+    width: 85%;
+    margin: auto;
+    font-size: x-large;
+    padding: 30px;
+
+}
+
+.my_work {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    font-size: x-large;
+    padding: 30px;
+    font-style: oblique;
+    border-bottom: 2px solid black;
+}
+
+.app1 {
+    width: 45%;
+    border-radius: 14px;
+    border: 4px solid var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px auto 15px;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height:200px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+       
+.app1:hover {
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
+    border-radius: 10px;
+    text-shadow: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+
+.smaller_apps {
+  display: flex;
+  justify-content: center;
+}
+    
+.app2 {
+    width: 35%;
+    border-radius: 14px;
+    border: 4px solid var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-image: url(../images/horiseon.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.app2:hover {
+    color: var(--primary-color);
+    border-radius: 10px;
+    text-shadow: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+.app3 {
+    width: 35%;
+    border-radius: 14px;
+    border: 4px solid var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-image: url(../images/smoky.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.app3:hover {
+    color: var(--primary-color);
+    border-radius: 10px;
+    text-shadow: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+.app4 {
+    width: 35%;
+    border-radius: 14px;
+    border: 4px solid var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-image: url(../images/smoky.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.app4:hover {
+    color: var(--primary-color);
+    border-radius: 10px;
+    text-shadow: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+.app5 {
+    width: 35%;
+    border-radius: 14px;
+    border: 4px solid var(--secondary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-image: url(../images/smoky.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.app5:hover {
+    color: var(--primary-color);
+    border-radius: 10px;
+    text-shadow: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+.contact {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    font-size: x-large;
+    padding: 30px;
+    font-style: oblique;
+    border-bottom: 2px solid black;
+}
+
+.contact_info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
