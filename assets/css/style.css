@@ -1,23 +1,25 @@
+/* color selection */
 :root {
     --primary-color: #ffff;
     --secondary-color: rgb(40, 43, 43);
     --highlight-color: cadetblue;
 }
-
+/* scrolls down the page instead of jumping to it */
 html {
     scroll-behavior: smooth;
 }
-
+/* default margins and padding */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+/* default font style and background color */
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color:var(--highlight-color);
 }
-  
+/* perameters for the header */  
 header {
     padding: 20px 35px;
     background-color: var(--secondary-color);
@@ -28,7 +30,7 @@ header {
     background-attachment: fixed;
     background-position: 80%;
 }
-
+/* the header */
 header h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
@@ -40,13 +42,13 @@ header h1 {
     padding: 0 5px 0 5px;
     box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.95);
     }
-
+/* first letter of the name */
 header h1::first-letter {
       font-weight: bolder;
       color: rgb(0, 0, 0);
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
+/* navigation buttons in the header */
 header a {
     text-decoration: none;
     color: var(--primary-color);
@@ -70,7 +72,7 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-  
+/* button changes as the cursor moves over them */  
 header nav ul li a:hover {
     background: var(--highlight-color);
     color: var(--secondary-color);
@@ -81,14 +83,14 @@ header nav ul li a:hover {
 
 section {
     padding: 60px;
-    background-color:var(--highlight-color);
 }
-
+/* hero portion of th page */
 .hero {
     background-image: url('../images/smoky.jpg');
     background-size: cover;
     display: flex;
     justify-content: flex-start; 
+    padding: 60px;
 }
   
 .hero-portrait {
@@ -97,9 +99,7 @@ section {
     margin: auto;
     box-shadow: 0 13px 13px rgba(0, 0, 0, 0.75);
 }
-
-.hero_quote
-
+/* About me */
 .am_heading {
     display: flex;
     width: 85%;
@@ -118,7 +118,7 @@ section {
     padding: 30px;
 
 }
-
+/* my work */ 
 .my_work {
     display: flex;
     width: 85%;
@@ -191,8 +191,7 @@ section {
     text-decoration: none;
     border-radius: 14px;
 }
-    
-
+/* contact me */    
 .contact {
     display: flex;
     width: 85%;
@@ -223,7 +222,7 @@ section {
     text-shadow: 3px 3px 5px rgba(15, 15, 15, 1);
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* MEDIA QUERY FOR SMALLER SCREENS */
 @media screen and (max-width: 980px) {
     header nav ul li a {
         font-size: 4vw;
