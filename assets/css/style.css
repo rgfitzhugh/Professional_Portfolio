@@ -1,7 +1,6 @@
 :root {
     --primary-color: #ffff;
     --secondary-color: rgb(40, 43, 43);
-    --tertiary-color: rgb(40, 43, 43);
     --highlight-color: cadetblue;
 }
 
@@ -82,26 +81,24 @@ header nav ul li a:hover {
 
 section {
     padding: 60px;
-    background-color: var(--highlight-color);
+    background-color:var(--highlight-color);
 }
 
 .hero {
     background-image: url('../images/smoky.jpg');
     background-size: cover;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    background-attachment: fixed;
-    background-position: 100%;
-    
 }
   
 .hero-portrait {
+    display: flex;
+    justify-content: flex-start;
     content: url(../images/Rob_1.jpg);
     width: 35%;
     margin-left: 5%;
     box-shadow: 0 13px 13px rgba(0, 0, 0, 0.75);
 }
+
+.hero_quote
 
 .am_heading {
     display: flex;
@@ -149,25 +146,27 @@ section {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
 }
        
-.app1:hover {
+
+.app1 a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 1.55vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    text-decoration: none;
     color: var(--primary-color);
-    border-radius: 10px;
-    text-shadow: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
 }
 
-
-.smaller_apps {
-  display: flex;
-  justify-content: center;
+.app1 a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(15, 15, 15, 1);
 }
     
 .app2 {
     width: 35%;
+    margin: auto;
     border-radius: 14px;
     border: 4px solid var(--secondary-color);
     font-size: 22px;
@@ -178,23 +177,28 @@ section {
     background-position: center;
     min-height: 150px;
     display:flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    color: white;
 }
 
-.app2:hover {
+.app2 a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 1.55vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    text-decoration: none;
     color: var(--primary-color);
-    border-radius: 10px;
-    text-shadow: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+.app2 a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(15, 15, 15, 1);
 }
 
 .app3 {
     width: 35%;
+    margin: auto;
     border-radius: 14px;
     border: 4px solid var(--secondary-color);
     font-size: 22px;
@@ -205,23 +209,30 @@ section {
     background-position: center;
     min-height: 150px;
     display:flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: white;
 }
 
-.app3:hover {
+.app3 a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 1.55vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    text-decoration: none;
     color: var(--primary-color);
-    border-radius: 10px;
-    text-shadow: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+.app3 a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(15, 15, 15, 1);
 }
 
 .app4 {
     width: 35%;
+    margin: auto;
     border-radius: 14px;
     border: 4px solid var(--secondary-color);
     font-size: 22px;
@@ -232,23 +243,30 @@ section {
     background-position: center;
     min-height: 150px;
     display:flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: white;
 }
 
-.app4:hover {
+.app4 a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 1.55vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    text-decoration: none;
     color: var(--primary-color);
-    border-radius: 10px;
-    text-shadow: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+.app4 a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(15, 15, 15, 1);
 }
 
 .app5 {
     width: 35%;
+    margin: auto;
     border-radius: 14px;
     border: 4px solid var(--secondary-color);
     font-size: 22px;
@@ -259,19 +277,25 @@ section {
     background-position: center;
     min-height: 150px;
     display:flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: white;
 }
 
-.app5:hover {
+.app5 a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 1.55vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    text-decoration: none;
     color: var(--primary-color);
-    border-radius: 10px;
-    text-shadow: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 10px rgba(252, 251, 251, 0.95);
+}
+
+.app5 a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(15, 15, 15, 1);
 }
 
 .contact {
@@ -285,8 +309,50 @@ section {
     border-bottom: 2px solid black;
 }
 
-.contact_info {
+.contact_info a {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 0 15px 0 15px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 15px;
+    text-decoration: none;
+    color:var(--primary-color);
+}
+
+.contact_info a:hover {
+    color: black;
+    text-shadow: 3px 3px 5px rgba(15, 15, 15, 1);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header nav ul li a {
+        font-size: 2.55vw;
+    }
+    .hero-portrait {
+        width: 50%;
+        margin-left: 0;
+    }
+}
+    
+@media screen and (max-width: 768px) {
+    header nav ul li a {
+        font-size: 3.55vw;
+    }
+    .hero-portrait {
+        width: 60%;
+        margin-left:0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        font-size: 4.55vw;
+    }
+    .hero-portrait {
+        width: 70%;
+        margin-left:0;
+    }
 }
