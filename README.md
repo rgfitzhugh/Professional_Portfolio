@@ -1,13 +1,18 @@
 Module 2 Weekly Challenge
 
-The challenge is to create a professional looking portfolio.
+Welcome to my intial professional portfolio as a web developer!
 
-1. Must include the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-2. Click one of the navigation links the UI scrolls to the corresponding section
-3. Click on the link to the section about their work and the UI scrolls to the section with titled images of the developer's applications
-4. Developer's first application, that application's image should be larger in size than the others
-5. Click on the images of the applicationsand are taken to that deployed application
-6. When viewed on different size screens the page has a responsive layout
+At the top of the site you will notice a header with navigation links that will guide you to other portions of the page.  Using these links you will be able to find out a little out me, see some of my previous projects and find ways to contact me.
+
+There aren't many projects listed now as I am just starting but this list will grow as I complete more projects.
+
+
+Please visit : <a href:https://rgfitzhugh.github.io/Professional_Portfolio/ ></a>
+to visit my protfolio
+
+
+
+
 
 Submission required for this challenge: 
     URL of the portfolio.
